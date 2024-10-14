@@ -21,10 +21,7 @@ public:
 		middle_name = other.middle_name;
 		return *this;
 	}
-	std::string display() {
-		std::string result = " Name: " + name + " Surname: " + surname + " Middle name: " + middle_name;
-		return result;
-	}
+	std::string display();
 };
 
 
@@ -37,6 +34,7 @@ public:
 	Date(int year, int month, int day);
 	Date();
 	void Set_Date();
+
 	std::string display();
 
 };

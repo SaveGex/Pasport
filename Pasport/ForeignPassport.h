@@ -24,7 +24,7 @@ public:
 		auto duration = now.time_since_epoch();
 		auto millis = std::chrono::duration_cast<std::chrono::milliseconds>(duration).count();
 
-		number_ForeignPassport = to_string(number) + to_string(millis);
+		number_ForeignPassport = to_string(number) + '-' + to_string(millis);
 	}
 	ForeignPassport() : ForeignPassport(Pasport(string(""), string(""), string(""), ' ', string(""), 0, 0, 0, 0, 0, 0, 0, 0, 0), {}, 0) {}
 

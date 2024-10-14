@@ -60,6 +60,11 @@ void Date::Set_Date() {
 }
 
 std::string Date::display(){
-	std::string result = " date: " + year + month +  day;
+	std::string result = " date: " + std::to_string(year) +'.' + std::to_string(month) + '.' + std::to_string(day);
+	return result;
+}
+
+std::string Name::display() {
+	std::string result = " Name: " + name + " Surname: " + surname + " Middle name: " + middle_name;
 	return result;
 }
